@@ -9,9 +9,54 @@ and open the template in the editor.
         <title>TODO supply a title</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+        <link href="js/libs/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="js/libs/twitter-bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+        <style>
+            #myMap {
+                height: 100%;
+            }
+        </style>
+
+
+
+
+
     </head>
     <body>
-        <div>TODO write content</div>
+
+        <div class="container">
+            <div class="page-header">
+                <h1>Playground</h1>
+            </div>
+
+            <div class="row">
+                <div class="col-md-5">Some text here</div>
+                <div class="col-md-7">
+                    The map
+                    <div id="myMap2" style="width:100%; height:100%"></div>
+
+                </div>
+            </div>
+        </div>
+        <div id="myMap"></div>
+        <script>
+            /*
+            var map;
+            function initMap() {
+                map = new google.maps.Map(document.getElementById('myMap'), {
+                    center: {lat: -34.397, lng: 150.644},
+                    zoom: 8
+                });
+            } */
+        </script>
+
+
+        <script src="js/libs/jquery/jquery.min.js"></script>
+        <script src="js/libs/twitter-bootstrap/js/bootstrap.min.js"></script>
+        <script src="js/main.js?time=123"></script>
+
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6bN4Hwc2lZqPrj18QYM4Gz0anE8EXJrk&callback=MapPublisher.init"></script>
+
     </body>
 </html>
